@@ -11,33 +11,33 @@
 <h2>Procedure I used to upload the screenshots to the sandbox.</h2>
 
 1. First, I opened a `SFTP` socket connection with the remote server via the command:
-```
+```bash
 sftp <user>@<hostname>
 ```
 
 2. Then, I input the password as requested by the interactive `SFTP` shell.
 
 3. I followed this step by switching to the desired remote directory:
-```
+```bash
 sftp> cd desired_directory
 ```
 
 4. Then I switched my local directory to the appropriate one:
-```
+```bash
 sftp> lcd appropriate_dir
 ```
 
 5. Next, I transfered the directory containing the screen shots to the server:
-```
+```bash
 sftp> put -r screen_shot_dir
 ```
 
 6. Finally, I checked for the success by listing the contents of the remote working directory.
-```
+```bash
 sftp> ls
 ```
 
 7. This confirmed my success and so I exited the `SFTP` interactive shell:
-```
+```bash
 sftp> exit
 ```
