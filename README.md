@@ -14,24 +14,30 @@
 ```
 sftp <user>@<hostname>
 ```
-1. Then, I input the password as requested by the interactive `SFTP` shell.
-1. I followed this step by switching to the desired remote directory:
+
+2. Then, I input the password as requested by the interactive `SFTP` shell.
+
+3. I followed this step by switching to the desired remote directory:
 ```
 sftp> cd desired_directory
 '''
-1. Then I switched my local directory to the appropriate one:
+
+4. Then I switched my local directory to the appropriate one:
 ```
 sftp> lcd appropriate_dir
 ```
-1. Next, I transfered the directory containing the screen shots to the server:
+
+5. Next, I transfered the directory containing the screen shots to the server:
 ```
 sftp> put -r screen_shot_dir
 ```
-1. Finally, I checked for the success by listing the contents of the remote working directory.
+
+6. Finally, I checked for the success by listing the contents of the remote working directory.
 '''
 sftp> ls
 ```
-1. This confirmed my success and so I exited the `SFTP` interactive shell:
+
+7. This confirmed my success and so I exited the `SFTP` interactive shell:
 ```
 sftp> exit
 ```
