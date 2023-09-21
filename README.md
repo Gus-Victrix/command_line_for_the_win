@@ -20,7 +20,7 @@ sftp <user>@<hostname>
 3. I followed this step by switching to the desired remote directory:
 ```
 sftp> cd desired_directory
-'''
+```
 
 4. Then I switched my local directory to the appropriate one:
 ```
@@ -33,7 +33,7 @@ sftp> put -r screen_shot_dir
 ```
 
 6. Finally, I checked for the success by listing the contents of the remote working directory.
-'''
+```
 sftp> ls
 ```
 
