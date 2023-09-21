@@ -12,7 +12,7 @@
 
 1. First, I opened a `SFTP` socket connection with the remote server via the command:
 ```bash
-sftp <user>@<hostname>
+$ sftp <user>@<hostname>
 ```
 
 2. Then, I input the password as requested by the interactive `SFTP` shell.
